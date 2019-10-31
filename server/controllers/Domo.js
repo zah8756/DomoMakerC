@@ -15,7 +15,6 @@ const makeDomo = (req, res) => {
   if (!req.body.name || !req.body.age) {
     return res.status(400).json({ error: 'RAWR! All fields are required' });
   }
-  
   const domoData = {
     name: req.body.name,
     age: req.body.age,
